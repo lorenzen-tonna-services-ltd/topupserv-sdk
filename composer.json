@@ -1,0 +1,10 @@
+{
+    "name": "lorenzen-tonna-services-ltd/topupserv-sdk",
+    "type": "project",
+    "description": "",
+    "autoload": {
+        "psr-4": {
+            "TopUpService\\": "src/"
+        }
+    }
+}
