@@ -44,6 +44,11 @@ class TopUp
 	private $date;
 
 	/**
+	 * @var array
+	 */
+	private $payload;
+
+	/**
 	 * @return string
 	 */
 	public function getProvider()
@@ -172,5 +177,21 @@ class TopUp
 	public function setDate($date)
 	{
 		$this->date = $date;
+	}
+
+	/**
+	 * @param array $payload
+	 */
+	public function setPayload(array $payload)
+	{
+		$this->payload = $payload;
+	}
+
+	/**
+	 * @return array
+	 */
+	public function getPayload()
+	{
+		return $this->payload;
 	}
 }
