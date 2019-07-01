@@ -44,7 +44,7 @@ class TopUp
 	private $date;
 
 	/**
-	 * @var array
+	 * @var string
 	 */
 	private $payload;
 
@@ -180,15 +180,15 @@ class TopUp
 	}
 
 	/**
-	 * @param array $payload
+	 * @param string $payload
 	 */
-	public function setPayload(array $payload)
+	public function setPayload($payload)
 	{
 		$this->payload = $payload;
 	}
 
 	/**
-	 * @return array
+	 * @return string
 	 */
 	public function getPayload()
 	{

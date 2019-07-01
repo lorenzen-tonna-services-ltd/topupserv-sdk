@@ -95,7 +95,7 @@ class TopUpServiceClient
 			'reference'    => $topUp->getReference(),
 			'callback_url' => $topUp->getCallbackUrl(),
 			'date'         => $topUp->getDate(),
-			'payload'      => json_encode($topUp->getPayload())
+			'payload'      => $topUp->getPayload()
 		]);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
