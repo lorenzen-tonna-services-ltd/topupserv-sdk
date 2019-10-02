@@ -82,6 +82,14 @@ class TopUpServiceClient
     }
 
     /**
+     * @return string
+     */
+    public function getLastResponse()
+    {
+        return $this->lastResponse;
+    }
+
+    /**
      * @param TopUp $topUp
      * @return integer
      */
